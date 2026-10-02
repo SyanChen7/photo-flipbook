@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Flipbook"
+  short_description: "Interactive photo books with editable handwritten notes"
+  default_prompt: "Use $photo-flipbook to turn my photos into an interactive HTML book with handwritten notes."

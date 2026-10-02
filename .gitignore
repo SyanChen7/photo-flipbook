@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+notes.json
+notes.backup.json
+notes.pending.json
+output/
+renders/
+qa/
+*.log
+*.zip

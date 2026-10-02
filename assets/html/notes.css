@@ -1,0 +1,20 @@
+@font-face{font-family:"Memory Hand";src:url("style/fonts/maoken-handwriting-0.20.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+.pencil-write{position:fixed;z-index:1000;width:46px;height:46px;border:1px solid #e2d8bd;border-radius:50%;background:#fff8e9ec;color:#405347;box-shadow:0 3px 14px #32231030;cursor:pointer;font-size:23px;display:grid;place-items:center}
+.pencil-write:hover{background:#fffaf0;transform:scale(1.06)}
+.pencil-hit{position:fixed;z-index:999;border:0;background:transparent;cursor:pointer;clip-path:polygon(0 0,15% 0,100% 90%,90% 100%)}
+.note-bar{position:fixed;z-index:1001;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;padding:10px 14px;background:#fff9ecf5;border:1px solid #e0d7c2;border-radius:16px;box-shadow:0 6px 24px #271b1730;color:#364639;font:14px/1.3 system-ui;max-width:calc(100vw - 20px);flex-wrap:wrap;justify-content:center}
+.note-bar[hidden]{display:none}.note-bar button{border:0;background:#eae6d8;border-radius:8px;padding:8px 12px;cursor:pointer}.note-bar .save{background:#35564a;color:#fff}.note-bar button:disabled{opacity:.4;cursor:default}.note-hint{flex-basis:100%;text-align:center;font-size:12px;color:#657160}
+.note-toast{position:fixed;z-index:1002;top:18px;left:50%;transform:translateX(-50%);padding:10px 16px;background:#fff9ecf5;color:#364639;border-radius:10px;font:14px/1.5 system-ui;max-width:90vw;box-shadow:0 3px 15px #39251622}.note-toast:empty{display:none}
+.memory-note{position:absolute;z-index:6;white-space:pre-wrap;overflow-wrap:anywhere;color:#3e493d;font-family:"Memory Hand","Kaiti SC","KaiTi",serif;font-weight:400;line-height:1.55;pointer-events:none}
+.memory-text{outline:none;min-height:1.55em;white-space:pre-wrap}
+.book[data-editing="true"] .book-page{cursor:crosshair}.book[data-editing="true"] .memory-note{pointer-events:auto;cursor:text;outline:1px dashed #647e67aa;background:#fff9e528}.book[data-editing="true"] .memory-note.selected{outline:1px solid #526f58;background:#fff9e55c}
+.note-grip,.note-resize{display:none;position:absolute;border:1px solid #d3cbb6;background:#fff9ec;color:#375143;z-index:8;touch-action:none;border-radius:6px;width:28px;height:28px;padding:0;font:17px system-ui;cursor:grab}
+.note-grip{left:0;top:-29px}.note-resize{right:0;bottom:-29px;cursor:ew-resize}.book[data-editing="true"] .selected .note-grip,.book[data-editing="true"] .selected .note-resize{display:block}
+@media(max-width:700px){.note-bar{bottom:10px;gap:5px;padding:8px}.note-bar button{padding:8px}.note-toast{top:8px}.pencil-write{width:42px;height:42px}}
+.pencil-write[hidden],.pencil-hit[hidden]{display:none}
+@media(max-width:700px){.note-bar{width:calc(100vw - 20px)}}
+
+.note-bar button[data-action="cancel"]{background:transparent;color:#7a7e70;font-size:12px}
+
+.memory-note{transform-origin:center center}
+.note-color,.note-angle{display:flex;align-items:center;gap:5px;font-size:12px}.note-color input{width:30px;height:28px;padding:2px;border:1px solid #d7cfbc;background:transparent;border-radius:5px;cursor:pointer}.note-angle input{width:85px;accent-color:#35564a}.note-angle output{min-width:28px;font-variant-numeric:tabular-nums}

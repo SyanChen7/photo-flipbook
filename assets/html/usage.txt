@@ -1,0 +1,9 @@
+Photo Flipbook
+
+Requires Python 3.10+ and a modern browser. Fonts are included; no system installation is needed.
+macOS: run open-flipbook.command. Windows: run open-flipbook.bat.
+Linux / terminal: python3 notes-server.py
+Keep the terminal running while editing. Click the pencil, then a page to add text. Select text to change size, color, rotation, position or box width; click Save to persist.
+Notes are stored in notes.json with the previous revision in notes.backup.json. Copy these with your book, but do not publish them unintentionally.
+Opening index.html directly allows reading; saving requires the local server.
+The included page-turn recording is enabled by default; use --sound to replace it.
