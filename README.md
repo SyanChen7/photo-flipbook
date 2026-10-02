@@ -5,6 +5,7 @@
 Turn photos and posters into a local, interactive HTML photo book with a wooden desk setting, cloth covers, layered page edges, shadows, and realistic page turns.
 
 ## Demo
+
 https://github.com/user-attachments/assets/827a3277-13a8-44a3-be71-2fc60e4bf3d5
 
 ## Features

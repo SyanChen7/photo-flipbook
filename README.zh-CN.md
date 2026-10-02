@@ -6,9 +6,7 @@
 
 ## Demo · 效果预览
 
-![Photo Flipbook 翻页与手写文字编辑演示](assets/demo/photo-flipbook-demo.gif)
-
-[查看带声音的原画质 MP4](assets/demo/photo-flipbook-demo.mp4)
+https://github.com/user-attachments/assets/827a3277-13a8-44a3-be71-2fc60e4bf3d5
 
 ## 核心功能
 
