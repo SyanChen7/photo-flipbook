@@ -27,6 +27,8 @@ Clone 或下载本仓库。作为 Agent Skill 使用时，把整个目录放入�
 
 > 使用 $photo-flipbook，把这个文件夹的照片制作成相册，保留完整照片，并支持手写感想。
 
+SkillHub 使用 [`distributions/skillhub`](distributions/skillhub/SKILL.md) 中的启动版。首次使用时，它从本仓库的 GitHub Release 下载完整 v1.0.0 模板，并校验固定 SHA-256，以保留 GitHub 导入流程会过滤的字体和媒体。首次下载需要联网；也可用安装脚本的 `--archive` 参数指定已下载的完整 ZIP，离线完成安装。
+
 ## 基本使用
 
 准备按阅读顺序排列的 JPEG、PNG、WebP、GIF 或 AVIF 图片；HEIC／RAW 请先转换。可另备桌面背景和有权使用的音效。生成器复制原图，不修改原文件；发布生成的相册前请自行检查照片元数据。

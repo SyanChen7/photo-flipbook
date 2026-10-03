@@ -27,6 +27,8 @@ Ask your agent:
 
 > Use $photo-flipbook to make a photo book from this folder. Keep the photos complete and enable handwritten notes.
 
+For SkillHub, use the launcher in [`distributions/skillhub`](distributions/skillhub/SKILL.md). It downloads the complete v1.0.0 runtime from this repository's GitHub Release on first use and verifies a pinned SHA-256. This preserves fonts and media that SkillHub's GitHub importer filters out. The full release ZIP can also be supplied offline with the installer's `--archive` option.
+
 ## Basic usage
 
 Prepare JPEG, PNG, WebP, GIF, or AVIF images in reading order. Convert HEIC/RAW files first. Optionally provide your own background and an audio file you have permission to use. Original images are copied, not edited; review photo metadata before publishing a generated book.
